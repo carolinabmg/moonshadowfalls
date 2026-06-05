@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planejamento de Estudos 2026–2029 🎀💻</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* === CSS VARIABLES === */
+:root {
+  --pink-100: #FFF0F3;
+  --pink-200: #FFD6E0;
+  --pink-300: #FFB6C1;
+  --pink-400: #FF8FAB;
+  --pink-500: #E8728A;
+  --lilac-100: #F3EEFF;
+  --lilac-200: #E6E6FA;
+  --lilac-300: #DDA0DD;
+  --lilac-400: #C9A0DC;
+  --mint-100: #F0FFF4;
+  --mint-200: #D4F5E0;
+  --mint-300: #A8E6CF;
+  --cream: #FFFAF5;
+  --soft-white: #FFF5F5;
+  --text-dark: #4A3347;
+  --text-mid: #6B5068;
+  --text-light: #8A7088;
+  --shadow-soft: 0 2px 16px rgba(221,160,221,0.13);
+  --shadow-card: 0 4px 24px rgba(255,182,193,0.18);
+  --radius: 18px;
+  --radius-sm: 12px;
+}
+
+/* === RESET & BASE === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--cream);
+  color: var(--text-dark);
+  line-height: 1.7;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 600px 400px at 10% 20%, rgba(255,182,193,0.15), transparent),
+    radial-gradient(ellipse 500px 500px at 85% 60%, rgba(221,160,221,0.12), transparent),
+    radial-gradient(ellipse 400px 300px at 50% 90%, rgba(168,230,207,0.1), transparent);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* === NAV === */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(135deg, rgba(255,240,243,0.92), rgba(243,238,255,0.92));
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1.5px solid rgba(255,182,193,0.3);
+  padding: 0 20px;
+  box-shadow: 0 2px 20px rgba(221,160,221,0.1);
+}
+nav .nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 12px 0;
+}
+nav .nav-inner::-webkit-scrollbar { display: none; }
+nav a {
+  text-decoration: none;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--text-mid);
+  padding: 6px 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  border: 1.5px solid transparent;
+}
+nav a:hover {
+  background: var(--pink-200);
+  color: var(--pink-500);
+  border-color: var(--pink-300);
+  transform: translateY(-1px);
+}
+
+/* === MAIN CONTAINER === */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px 80px;
+  position: relative;
+  z-index: 1;
+}
+
+/* === HEADER === */
+.hero {
+  text-align: center;
+  padding: 60px 20px 50px;
+  position: relative;
+}
+.hero::before {
+  content: '🎀';
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 28px;
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-10px); }
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--pink-500), var(--lilac-300), var(--pink-400));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+.hero .subtitle {
+  font-size: 15px;
+  color: var(--text-light);
+  font-weight: 400;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+.hero .subtitle span {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--pink-200), var(--lilac-200));
+  padding: 2px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+  color: var(--text-mid);
+  margin: 3px 2px;
+  font-size: 13px;
+}
+.hero .decorative-line {
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--pink-300), var(--lilac-300), var(--mint-300));
+  border-radius: 3px;
+  margin: 24px auto 0;
+}
+
+/* === SECTION HEADERS === */
+.section {
+  margin-bottom: 50px;
+  animation: fadeUp 0.6s ease-out both;
+}
+.section-header {
+  background: linear-gradient(135deg, var(--pink-100), var(--lilac-100), var(--mint-100));
+  border: 1.5px solid rgba(255,182,193,0.25);
+  border-radius: var(--radius);
+  padding: 20px 28px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.section-header::after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 120px; height: 120px;
+  background: radial-gradient(circle, rgba(255,182,193,0.15), transparent 70%);
+  border-radius: 50%;
+  transform: translate(30%, -30%);
+}
+.section-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  position: relative;
+  z-index: 1;
+}
+.section-header p {
+  font-size: 13px;
+  color: var(--text-light);
+  margin-top: 4px;
+  position: relative;
+  z-index: 1;
+}
+
+/* === TABLES === */
+.table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  border: 1.5px solid rgba(255,182,193,0.2);
+  background: white;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+thead th {
+  background: linear-gradient(135deg, var(--pink-200), var(--lilac-200));
+  color: var(--text-dark);
+  font-weight: 600;
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  border-bottom: 2px solid rgba(255,182,193,0.3);
+  position: sticky;
+  top: 0;
+}
+tbody tr {
+  transition: background 0.2s ease;
+}
+tbody tr:nth-child(even) { background: var(--pink-100); }
+tbody tr:nth-child(odd) { background: white; }
+tbody tr:hover { background: var(--lilac-100); }
+td {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255,182,193,0.15);
+  vertical-align: top;
+}
+td:first-child {
+  font-weight: 500;
+  color: var(--text-dark);
+  white-space: nowrap;
+}
+.tag {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 11.5px;
+  font-weight: 500;
+  margin: 2px 2px;
+}
+.tag-pink { background: var(--pink-200); color: var(--pink-500); }
+.tag-lilac { background: var(--lilac-200); color: #7B5EA7; }
+.tag-mint { background: var(--mint-200); color: #3A8A5C; }
+.tag-cream { background: #FFF3E0; color: #B8860B; }
+
+/* === CARDS === */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+.card {
+  background: white;
+  border: 1.5px solid rgba(255,182,193,0.2);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--pink-300), var(--lilac-300), var(--mint-300));
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card);
+}
+.card h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: var(--text-dark);
+}
+.card p, .card li {
+  font-size: 13px;
+  color: var(--text-mid);
+  line-height: 1.7;
+}
+.card ul { list-style: none; padding: 0; }
+.card ul li::before {
+  content: '✦ ';
+  color: var(--pink-400);
+  font-size: 10px;
+}
+
+/* === TIMELINE === */
+.timeline {
+  position: relative;
+  padding-left: 40px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 16px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--pink-300), var(--lilac-300), var(--mint-300));
+  border-radius: 3px;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 24px;
+  background: white;
+  border-radius: var(--radius-sm);
+  padding: 18px 22px;
+  border: 1.5px solid rgba(255,182,193,0.2);
+  box-shadow: var(--shadow-soft);
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -32px;
+  top: 22px;
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(135deg, var(--pink-400), var(--lilac-300));
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px var(--pink-300);
+}
+.timeline-item h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+.timeline-item p {
+  font-size: 13px;
+  color: var(--text-mid);
+}
+
+/* === GOALS === */
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+}
+.goal-card {
+  background: white;
+  border-radius: var(--radius-sm);
+  padding: 18px 20px;
+  border: 1.5px solid rgba(255,182,193,0.2);
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+.goal-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+  border-color: var(--pink-300);
+}
+.goal-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--pink-100), var(--lilac-100));
+  border-radius: 12px;
+}
+.goal-text {
+  font-size: 13.5px;
+  color: var(--text-mid);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* === WEEK TABS === */
+.week-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.week-tab {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1.5px solid var(--pink-300);
+  background: white;
+  color: var(--text-mid);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+.week-tab:hover, .week-tab.active {
+  background: linear-gradient(135deg, var(--pink-200), var(--lilac-200));
+  color: var(--text-dark);
+  border-color: var(--lilac-300);
+}
+
+/* === LANG ROADMAP === */
+.lang-road {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0;
+}
+.lang-node {
+  text-align: center;
+  position: relative;
+}
+.lang-node .year-badge {
+  background: linear-gradient(135deg, var(--pink-300), var(--lilac-300));
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-family: 'Playfair Display', serif;
+}
+.lang-pills {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+.lang-pill {
+  background: white;
+  border: 1.5px solid var(--pink-200);
+  border-radius: 12px;
+  padding: 6px 16px;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--text-mid);
+  box-shadow: var(--shadow-soft);
+}
+.lang-arrow {
+  display: flex;
+  align-items: center;
+  color: var(--pink-300);
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+/* === ANIMATIONS === */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.section:nth-child(1) { animation-delay: 0s; }
+.section:nth-child(2) { animation-delay: 0.08s; }
+.section:nth-child(3) { animation-delay: 0.16s; }
+
+/* === FOOTER === */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 13px;
+  color: var(--text-light);
+  font-style: italic;
+  font-family: 'Dancing Script', cursive;
+  font-size: 18px;
+}
+
+/* === PRINT === */
+@media print {
+  nav { display: none; }
+  body::before { display: none; }
+  .section { break-inside: avoid; }
+  .hero { padding: 20px; }
+  .card:hover, .goal-card:hover, tbody tr:hover { transform: none; box-shadow: none; }
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 1.8rem; }
+  .cards-grid, .goals-grid { grid-template-columns: 1fr; }
+  td, th { padding: 8px 10px; font-size: 12px; }
+  .lang-road { flex-direction: column; align-items: center; }
+  .lang-arrow { transform: rotate(90deg); padding: 0; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+<div class="nav-inner">
+  <a href="#rotina">🕐 Rotina</a>
+  <a href="#semanal">📅 Semanal</a>
+  <a href="#unimar">🎓 Unimar</a>
+  <a href="#fatec">🏫 FATEC</a>
+  <a href="#ingles">🌍 Inglês</a>
+  <a href="#cronograma">📋 Cronograma</a>
+  <a href="#enem">📝 ENEM</a>
+  <a href="#metas">🎯 Metas</a>
+  <a href="#linguagens">💻 Linguagens</a>
+</div>
+</nav>
+
+<div class="container">
+
+<!-- HEADER -->
+<div class="hero">
+  <h1>Planejamento de Estudos 2026–2029 🎀💻</h1>
+  <p class="subtitle">
+    Seu guia completo para conquistar tudo!<br>
+    <span>ADS Unimar</span> <span>ADS FATEC</span> <span>ENEM 2026</span> <span>Inglês</span> <span>Explicaê</span>
+  </p>
+  <div class="decorative-line"></div>
+</div>
+
+<!-- PLACEHOLDER: sections will be filled in -->
+
+<!-- 1. ROTINA DIÁRIA -->
+<div class="section" id="rotina">
+  <div class="section-header">
+    <h2>🕐 Rotina Diária — Segunda a Sábado</h2>
+    <p>8 horas de estudo por dia · Acordar às 9h · Dormir às 21h · Domingo é folga 🌸</p>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Horário</th><th>Atividade</th><th>Foco</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>09:00 – 09:30</td><td>☕ Café da manhã + organização</td><td><span class="tag tag-cream">Preparação</span></td></tr>
+        <tr><td>09:30 – 11:30</td><td>📘 Bloco 1 — ADS Unimar</td><td><span class="tag tag-lilac">Algoritmos / Banco de Dados</span></td></tr>
+        <tr><td>11:30 – 11:45</td><td>🌷 Pausa</td><td><span class="tag tag-mint">Descanso</span></td></tr>
+        <tr><td>11:45 – 13:00</td><td>📚 Bloco 2 — ENEM: Humanas</td><td><span class="tag tag-pink">História / Geografia / Filosofia / Sociologia</span></td></tr>
+        <tr><td>13:00 – 14:00</td><td>🍽️ Almoço + descanso</td><td><span class="tag tag-mint">Descanso</span></td></tr>
+        <tr><td>14:00 – 15:30</td><td>📖 Bloco 3 — ENEM: Linguagens + Explicaê</td><td><span class="tag tag-pink">Português / Literatura</span></td></tr>
+        <tr><td>15:30 – 15:45</td><td>🌷 Pausa</td><td><span class="tag tag-mint">Descanso</span></td></tr>
+        <tr><td>15:45 – 17:15</td><td>🔢 Bloco 4 — FATEC</td><td><span class="tag tag-lilac">Matemática / Física</span></td></tr>
+        <tr><td>17:15 – 17:30</td><td>🌷 Pausa</td><td><span class="tag tag-mint">Descanso</span></td></tr>
+        <tr><td>17:30 – 18:30</td><td>🌍 Bloco 5 — Inglês</td><td><span class="tag tag-cream">Inglês (gramática, vocab, listening)</span></td></tr>
+        <tr><td>18:30 – 19:00</td><td>🧠 Revisão do dia + Mapa Mental</td><td><span class="tag tag-lilac">Revisão ativa</span></td></tr>
+        <tr><td>19:00 – 20:00</td><td>🍽️ Jantar + tempo livre</td><td><span class="tag tag-mint">Descanso</span></td></tr>
+        <tr><td>20:00 – 20:30</td><td>📝 Revisão leve / Flashcards</td><td><span class="tag tag-pink">Revisão passiva</span></td></tr>
+        <tr><td>20:30 – 21:00</td><td>🌙 Rotina noturna</td><td><span class="tag tag-cream">Skincare, organizar próximo dia</span></td></tr>
+        <tr><td>21:00</td><td>💤 Dormir</td><td><span class="tag tag-mint">Descanso total</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- 2. TABELA SEMANAL -->
+<div class="section" id="semanal">
+  <div class="section-header">
+    <h2>📅 Tabela Semanal — O Que Estudar Cada Dia</h2>
+    <p>Distribuição organizada por dia da semana · Domingo é folga 🎀</p>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Dia</th><th>ADS Unimar (9:30–11:30)</th><th>ENEM Humanas (11:45–13:00)</th><th>ENEM Linguagens (14:00–15:30)</th><th>FATEC (15:45–17:15)</th><th>Inglês (17:30–18:30)</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Segunda</td>
+          <td><span class="tag tag-lilac">Algoritmos + Lógica de Prog.</span></td>
+          <td><span class="tag tag-pink">História</span></td>
+          <td><span class="tag tag-pink">Português</span></td>
+          <td><span class="tag tag-lilac">Matemática</span></td>
+          <td><span class="tag tag-cream">Inglês</span></td>
+        </tr>
+        <tr>
+          <td>Terça</td>
+          <td><span class="tag tag-lilac">Banco de Dados</span></td>
+          <td><span class="tag tag-pink">Geografia</span></td>
+          <td><span class="tag tag-pink">Literatura</span></td>
+          <td><span class="tag tag-lilac">Física</span></td>
+          <td><span class="tag tag-cream">Inglês</span></td>
+        </tr>
+        <tr>
+          <td>Quarta</td>
+          <td><span class="tag tag-lilac">Economia</span></td>
+          <td><span class="tag tag-pink">Filosofia</span></td>
+          <td><span class="tag tag-pink">Português</span></td>
+          <td><span class="tag tag-lilac">Matemática</span></td>
+          <td><span class="tag tag-cream">Inglês</span></td>
+        </tr>
+        <tr>
+          <td>Quinta</td>
+          <td><span class="tag tag-lilac">Projeto Integrador I</span></td>
+          <td><span class="tag tag-pink">Sociologia</span></td>
+          <td><span class="tag tag-pink">Literatura</span></td>
+          <td><span class="tag tag-lilac">Física</span></td>
+          <td><span class="tag tag-cream">Inglês</span></td>
+        </tr>
+        <tr>
+          <td>Sexta</td>
+          <td><span class="tag tag-lilac">Algoritmos + BD (revisão)</span></td>
+          <td><span class="tag tag-pink">Português + Literatura</span></td>
+          <td><span class="tag tag-pink">Redação ENEM</span></td>
+          <td><span class="tag tag-lilac">Matemática</span></td>
+          <td><span class="tag tag-cream">Inglês</span></td>
+        </tr>
+        <tr>
+          <td>Sábado</td>
+          <td colspan="5" style="text-align:center; font-weight:500; color: var(--text-mid);">📝 Simulado ENEM · Revisão geral · Mapas Mentais · Projeto Integrador</td>
+        </tr>
+        <tr style="background: linear-gradient(135deg, var(--mint-100), var(--pink-100));">
+          <td>Domingo</td>
+          <td colspan="5" style="text-align:center; font-weight:600; color: var(--pink-500);">🌸 FOLGA — descanso, lazer, autocuidado 🎀</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- 3. ROADMAP ADS UNIMAR -->
+<div class="section" id="unimar">
+  <div class="section-header">
+    <h2>🎓 Roadmap ADS Unimar — A partir de Maio 2026</h2>
+    <p>Matérias do 1° semestre com conteúdos, linguagens recomendadas e plataformas de estudo</p>
+  </div>
+  <div class="cards-grid">
+    <div class="card">
+      <h4>💻 Algoritmos e Lógica de Programação</h4>
+      <ul>
+        <li>Pseudocódigo e Fluxogramas</li>
+        <li>Variáveis e Tipos de dados</li>
+        <li>Estruturas condicionais (if/else)</li>
+        <li>Loops (while, for)</li>
+        <li>Funções e procedimentos</li>
+        <li>Arrays e Matrizes</li>
+      </ul>
+      <div style="margin-top:12px;">
+        <span class="tag tag-lilac">Python</span>
+        <span class="tag tag-mint">C</span>
+      </div>
+      <p style="margin-top:8px; font-size:12px; color:var(--text-light);">Plataformas: Beecrowd, HackerRank, URI Online</p>
+    </div>
+    <div class="card">
+      <h4>📊 Economia</h4>
+      <ul>
+        <li>Introdução à Economia</li>
+        <li>Microeconomia — oferta e demanda</li>
+        <li>Macroeconomia — PIB, inflação</li>
+        <li>Mercado financeiro básico</li>
+        <li>Economia do mercado de TI</li>
+        <li>Indicadores econômicos</li>
+      </ul>
+      <div style="margin-top:12px;">
+        <span class="tag tag-cream">Teórica</span>
+      </div>
+    </div>
+    <div class="card">
+      <h4>🤝 Projeto Integrador I</h4>
+      <ul>
+        <li>Metodologia de projetos</li>
+        <li>Documentação técnica</li>
+        <li>Apresentação de projetos</li>
+        <li>Trabalho em equipe</li>
+        <li>Prototipação (Figma, Canva)</li>
+        <li>Gestão de tarefas (Trello, Notion)</li>
+      </ul>
+      <div style="margin-top:12px;">
+        <span class="tag tag-pink">Prática</span>
+      </div>
+    </div>
+    <div class="card">
+      <h4>🗄️ Banco de Dados</h4>
+      <ul>
+        <li>Conceitos e SGBD</li>
+        <li>Modelo Entidade-Relacionamento</li>
+        <li>SQL: SELECT, INSERT, UPDATE, DELETE</li>
+        <li>JOINs e subconsultas</li>
+        <li>Normalização (1FN, 2FN, 3FN)</li>
+        <li>MySQL / PostgreSQL</li>
+      </ul>
+      <div style="margin-top:12px;">
+        <span class="tag tag-lilac">SQL</span>
+        <span class="tag tag-mint">MySQL</span>
+        <span class="tag tag-cream">PostgreSQL</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 4. ROADMAP ADS FATEC -->
+<div class="section" id="fatec">
+  <div class="section-header">
+    <h2>🏫 Roadmap ADS FATEC — 2° Semestre 2026 até 2029</h2>
+    <p>Grade semestral completa com matérias e linguagens principais</p>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Semestre</th><th>Matérias</th><th>Linguagens / Tecnologias</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="tag tag-pink">2026.2</span></td>
+          <td>Algoritmos e Programação · Matemática Discreta · Sistemas Operacionais · Lab. de Hardware</td>
+          <td><span class="tag tag-lilac">Python</span> <span class="tag tag-mint">C</span></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-pink">2027.1</span></td>
+          <td>Estrutura de Dados · Engenharia de Software I · Redes de Computadores · Programação Orientada a Objetos</td>
+          <td><span class="tag tag-lilac">Java</span> <span class="tag tag-cream">UML</span></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-pink">2027.2</span></td>
+          <td>Banco de Dados · Desenvolvimento Web · Engenharia de Software II · Estatística Aplicada</td>
+          <td><span class="tag tag-lilac">SQL</span> <span class="tag tag-mint">HTML/CSS/JS</span></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-pink">2028.1</span></td>
+          <td>Programação Mobile · Sistemas Distribuídos · Gestão de Projetos · Interação Humano-Computador</td>
+          <td><span class="tag tag-lilac">React Native</span> <span class="tag tag-cream">Figma</span></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-pink">2028.2</span></td>
+          <td>Segurança da Informação · Cloud Computing · Tópicos Especiais em TI · Empreendedorismo</td>
+          <td><span class="tag tag-lilac">AWS/Azure</span> <span class="tag tag-mint">Docker</span></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-pink">2029.1</span></td>
+          <td>TCC / Estágio Supervisionado · Projeto Final · Ética e Legislação Profissional</td>
+          <td><span class="tag tag-lilac">Full Stack</span> <span class="tag tag-cream">Portfolio</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- 5. ROADMAP INGLÊS -->
+<div class="section" id="ingles">
+  <div class="section-header">
+    <h2>🌍 Roadmap de Inglês — Do Zero ao Intermediário-Avançado</h2>
+    <p>Plano de evolução por fases · 2026 a 2029</p>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h4>Fase 1 — Junho a Agosto 2026 <span class="tag tag-pink">Basics</span></h4>
+      <p>Greetings · Verb to Be · Present Simple · Pronouns · Articles · Vocabulário (500 palavras) · Duolingo diário · Música com letra</p>
+    </div>
+    <div class="timeline-item">
+      <h4>Fase 2 — Setembro a Dezembro 2026 <span class="tag tag-lilac">Elementary</span></h4>
+      <p>Past Simple · Future (will/going to) · Prepositions · Reading: textos curtos · Listening: podcasts para iniciantes · Escrita de frases simples</p>
+    </div>
+    <div class="timeline-item">
+      <h4>Fase 3 — 2027 <span class="tag tag-mint">Pre-Intermediate</span></h4>
+      <p>Conditionals · Modal verbs · Present Perfect · Writing: parágrafos · Conversation practice · Séries com legenda em inglês</p>
+    </div>
+    <div class="timeline-item">
+      <h4>Fase 4 — 2028 <span class="tag tag-cream">Intermediate</span></h4>
+      <p>Gramática complexa · Academic reading · Technical English for IT · Writing: essays e e-mails · Leitura de documentação técnica</p>
+    </div>
+    <div class="timeline-item">
+      <h4>Fase 5 — 2029 <span class="tag tag-pink">Upper-Intermediate</span></h4>
+      <p>Preparação TOEFL/IELTS · Fluency practice · Professional English · Entrevistas em inglês · Apresentações técnicas</p>
+    </div>
+  </div>
+</div>
+
+<!-- 6. CRONOGRAMA DETALHADO -->
+<div class="section" id="cronograma">
+  <div class="section-header">
+    <h2>📋 Cronograma Detalhado — Junho 2026</h2>
+    <p>Semana a semana, dia a dia — o que estudar em cada bloco 🌷</p>
+  </div>
+  <div class="week-tabs">
+    <button class="week-tab active" data-week="week1">Semana 1 (02–07 Jun)</button>
+    <button class="week-tab" data-week="week2">Semana 2 (09–14 Jun)</button>
+    <button class="week-tab" data-week="week3">Semana 3 (16–21 Jun)</button>
+    <button class="week-tab" data-week="week4">Semana 4 (23–28 Jun)</button>
+  </div>
+
+  <!-- SEMANA 1 -->
+  <div class="week-content" id="week1">
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Dia</th><th>ADS Unimar</th><th>ENEM Humanas</th><th>ENEM Linguagens</th><th>FATEC</th><th>Inglês</th></tr></thead>
+        <tbody>
+          <tr><td>Seg 02</td><td>Algoritmos: Introdução + Pseudocódigo</td><td>História: Brasil Colônia</td><td>Português: Fonética</td><td>Mat: Conjuntos</td><td>Verb to Be</td></tr>
+          <tr><td>Ter 03</td><td>Banco de Dados: Conceitos + SGBD</td><td>Geografia: Cartografia</td><td>Literatura: Quinhentismo</td><td>Física: Cinemática intro</td><td>Greetings</td></tr>
+          <tr><td>Qua 04</td><td>Economia: Introdução + Conceitos</td><td>Filosofia: Pré-socráticos</td><td>Português: Ortografia</td><td>Mat: Conjuntos numéricos</td><td>Pronouns</td></tr>
+          <tr><td>Qui 05</td><td>Projeto Integrador: Metodologia</td><td>Sociologia: Surgimento da Sociologia</td><td>Literatura: Quinhentismo (cont.)</td><td>Física: MRU</td><td>Articles (a/an/the)</td></tr>
+          <tr><td>Sex 06</td><td>Revisão: Algoritmos + BD</td><td>Português: Fonética + Literatura: Quinhentismo</td><td>Redação: Estrutura dissertativa</td><td>Mat: Intervalos</td><td>Vocabulário: Numbers, Colors</td></tr>
+          <tr><td>Sáb 07</td><td colspan="5" style="text-align:center;">📝 Simulado ENEM (parcial) + 🧠 Mapas Mentais da semana</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SEMANA 2 -->
+  <div class="week-content" id="week2" style="display:none;">
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Dia</th><th>ADS Unimar</th><th>ENEM Humanas</th><th>ENEM Linguagens</th><th>FATEC</th><th>Inglês</th></tr></thead>
+        <tbody>
+          <tr><td>Seg 09</td><td>Algoritmos: Variáveis + Tipos de dados</td><td>História: Ciclo do Açúcar</td><td>Português: Ortografia</td><td>Mat: Funções (intro)</td><td>Present Simple</td></tr>
+          <tr><td>Ter 10</td><td>Banco de Dados: Modelo Conceitual</td><td>Geografia: Fusos horários</td><td>Literatura: Barroco</td><td>Física: MRUV</td><td>Daily Routine vocab</td></tr>
+          <tr><td>Qua 11</td><td>Economia: Oferta e Demanda</td><td>Filosofia: Sócrates</td><td>Português: Acentuação</td><td>Mat: Função do 1° grau</td><td>Adverbs of frequency</td></tr>
+          <tr><td>Qui 12</td><td>Projeto Integrador: Documentação</td><td>Sociologia: Comte + Positivismo</td><td>Literatura: Barroco (cont.)</td><td>Física: Queda livre</td><td>Questions (Do/Does)</td></tr>
+          <tr><td>Sex 13</td><td>Revisão ADS</td><td>Português: Ortografia + Literatura: Barroco</td><td>Redação: Tema social</td><td>Mat: Função do 2° grau</td><td>Negatives (don't/doesn't)</td></tr>
+          <tr><td>Sáb 14</td><td colspan="5" style="text-align:center;">📝 Simulado ENEM (parcial) + 🧠 Mapas Mentais</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SEMANA 3 -->
+  <div class="week-content" id="week3" style="display:none;">
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Dia</th><th>ADS Unimar</th><th>ENEM Humanas</th><th>ENEM Linguagens</th><th>FATEC</th><th>Inglês</th></tr></thead>
+        <tbody>
+          <tr><td>Seg 16</td><td>Algoritmos: Estruturas condicionais</td><td>História: Mineração</td><td>Português: Acentuação</td><td>Mat: Função quadrática (gráfico)</td><td>Present Continuous</td></tr>
+          <tr><td>Ter 17</td><td>Banco de Dados: Modelo ER</td><td>Geografia: Geologia</td><td>Literatura: Arcadismo</td><td>Física: Lançamento vertical</td><td>Clothes vocabulary</td></tr>
+          <tr><td>Qua 18</td><td>Economia: Mercado + Concorrência</td><td>Filosofia: Platão</td><td>Português: Crase</td><td>Mat: Função exponencial</td><td>There is / There are</td></tr>
+          <tr><td>Qui 19</td><td>Projeto Integrador: Prototipação</td><td>Sociologia: Durkheim</td><td>Literatura: Arcadismo (cont.)</td><td>Física: Vetores</td><td>Prepositions of place</td></tr>
+          <tr><td>Sex 20</td><td>Revisão ADS</td><td>Português: Acentuação + Literatura: Arcadismo</td><td>Redação: Repertório sociocultural</td><td>Mat: Logaritmos (intro)</td><td>Can / Can't</td></tr>
+          <tr><td>Sáb 21</td><td colspan="5" style="text-align:center;">📝 Simulado ENEM (parcial) + 🧠 Mapas Mentais</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SEMANA 4 -->
+  <div class="week-content" id="week4" style="display:none;">
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Dia</th><th>ADS Unimar</th><th>ENEM Humanas</th><th>ENEM Linguagens</th><th>FATEC</th><th>Inglês</th></tr></thead>
+        <tbody>
+          <tr><td>Seg 23</td><td>Algoritmos: Loops (while/for)</td><td>História: Independência do Brasil</td><td>Português: Classes gramaticais</td><td>Mat: Logaritmos</td><td>Past Simple (regular)</td></tr>
+          <tr><td>Ter 24</td><td>Banco de Dados: SQL (CREATE, INSERT)</td><td>Geografia: Relevo brasileiro</td><td>Literatura: Romantismo</td><td>Física: Movimento circular</td><td>Past Simple (irregular)</td></tr>
+          <tr><td>Qua 25</td><td>Economia: PIB + Indicadores</td><td>Filosofia: Aristóteles</td><td>Português: Substantivos + Adjetivos</td><td>Mat: PA</td><td>Was / Were</td></tr>
+          <tr><td>Qui 26</td><td>Projeto Integrador: Apresentação</td><td>Sociologia: Weber</td><td>Literatura: Romantismo (cont.)</td><td>Física: Leis de Newton (intro)</td><td>Past questions</td></tr>
+          <tr><td>Sex 27</td><td>Revisão ADS</td><td>Português: Classes gramaticais + Literatura: Romantismo</td><td>Redação: Prática completa</td><td>Mat: PG</td><td>Vocab review mensal</td></tr>
+          <tr><td>Sáb 28</td><td colspan="5" style="text-align:center;">📝 Simulado ENEM completo + 🧠 Mapas Mentais + 🎯 Revisão de Metas do mês</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- 7. ENEM + EXPLICAÊ -->
+<div class="section" id="enem">
+  <div class="section-header">
+    <h2>📝 ENEM 2026 + Explicaê — Conteúdos e Mapas Mentais</h2>
+    <p>Matérias organizadas por módulos de estudo com sugestões de mapas mentais</p>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Matéria</th><th>Conteúdos — Explicaê</th><th>Mapa Mental</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="tag tag-pink">História</span></td>
+          <td>Brasil Colônia → Império → República Velha → Era Vargas → Ditadura Militar → Redemocratização · História Geral: Antiguidade → Medieval → Moderna → Contemporânea</td>
+          <td>Linha do tempo ilustrada por período</td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-pink">Geografia</span></td>
+          <td>Cartografia · Urbanização · Geopolítica · Meio Ambiente · Globalização · Clima · Relevo · Hidrografia · Agricultura · Indústria</td>
+          <td>Mapas temáticos com conexões</td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-pink">Filosofia</span></td>
+          <td>Pré-socráticos → Sócrates, Platão, Aristóteles → Filosofia Medieval → Moderna (Descartes, Kant) → Contemporânea (Marx, Nietzsche, Sartre)</td>
+          <td>Correntes filosóficas por época</td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-pink">Sociologia</span></td>
+          <td>Clássicos (Durkheim, Weber, Marx) → Cultura → Trabalho → Desigualdade Social → Movimentos Sociais → Cidadania</td>
+          <td>Pensadores e suas teorias</td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-lilac">Português</span></td>
+          <td>Gramática (fonética, morfologia, sintaxe) · Interpretação de texto · Redação dissertativo-argumentativa (competências 1–5)</td>
+          <td>Regras gramaticais + estrutura da redação</td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-lilac">Literatura</span></td>
+          <td>Quinhentismo → Barroco → Arcadismo → Romantismo → Realismo/Naturalismo → Parnasianismo → Simbolismo → Pré-Modernismo → Modernismo (1ª, 2ª, 3ª fase)</td>
+          <td>Escolas literárias + autores + obras</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- 8. METAS PESSOAIS -->
+<div class="section" id="metas">
+  <div class="section-header">
+    <h2>🎯 Metas Pessoais — 2026</h2>
+    <p>Objetivos claros para manter o foco e a motivação ao longo do ano ✨</p>
+  </div>
+  <div class="goals-grid">
+    <div class="goal-card">
+      <div class="goal-icon">📚</div>
+      <div class="goal-text">Estudar 8 horas por dia de segunda a sábado, com consistência e qualidade</div>
+    </div>
+    <div class="goal-card">
+      <div class="goal-icon">🎯</div>
+      <div class="goal-text">Alcançar nota acima de 750 pontos no ENEM 2026</div>
+    </div>
+    <div class="goal-card">
+      <div class="goal-icon">💻</div>
+      <div class="goal-text">Concluir o 1° semestre da ADS Unimar com aprovação em todas as matérias</div>
+    </div>
+    <div class="goal-card">
+      <div class="goal-icon">🏫</div>
+      <div class="goal-text">Passar no vestibular da FATEC para o 2° semestre de 2026</div>
+    </div>
+    <div class="goal-card">
+      <div class="goal-icon">🌍</div>
+      <div class="goal-text">Alcançar nível A2 em inglês até dezembro de 2026</div>
+    </div>
+    <div class="goal-card">
+      <div class="goal-icon">🧠</div>
+      <div class="goal-text">Criar 1 mapa mental por matéria por semana</div>
+    </div>
+    <div class="goal-card">
+      <div class="goal-icon">📝</div>
+      <div class="goal-text">Fazer 1 simulado ENEM completo por mês</div>
+    </div>
+    <div class="goal-card">
+      <div class="goal-icon">💪</div>
+      <div class="goal-text">Manter rotina de sono saudável: dormir às 21h, acordar às 9h</div>
+    </div>
+    <div class="goal-card">
+      <div class="goal-icon">🎀</div>
+      <div class="goal-text">Ter equilíbrio entre estudos e autocuidado — folga aos domingos</div>
+    </div>
+  </div>
+</div>
+
+<!-- 9. LINGUAGENS -->
+<div class="section" id="linguagens">
+  <div class="section-header">
+    <h2>💻 Linguagens de Programação — Roadmap 2026 a 2029</h2>
+    <p>Evolução gradual das linguagens ao longo da graduação</p>
+  </div>
+  <div class="lang-road">
+    <div class="lang-node">
+      <div class="year-badge">2026</div>
+      <div class="lang-pills">
+        <div class="lang-pill">🐍 Python (lógica, automação)</div>
+        <div class="lang-pill">🗄️ SQL (banco de dados)</div>
+        <div class="lang-pill">⚙️ C (fundamentos)</div>
+      </div>
+    </div>
+    <div class="lang-arrow">→</div>
+    <div class="lang-node">
+      <div class="year-badge">2027</div>
+      <div class="lang-pills">
+        <div class="lang-pill">☕ Java (POO, backend)</div>
+        <div class="lang-pill">🌐 HTML / CSS / JavaScript</div>
+      </div>
+    </div>
+    <div class="lang-arrow">→</div>
+    <div class="lang-node">
+      <div class="year-badge">2028</div>
+      <div class="lang-pills">
+        <div class="lang-pill">📘 TypeScript</div>
+        <div class="lang-pill">⚛️ React</div>
+        <div class="lang-pill">🟢 Node.js</div>
+      </div>
+    </div>
+    <div class="lang-arrow">→</div>
+    <div class="lang-node">
+      <div class="year-badge">2029</div>
+      <div class="lang-pills">
+        <div class="lang-pill">☁️ Cloud (AWS / Azure)</div>
+        <div class="lang-pill">🐳 DevOps (Docker, CI/CD)</div>
+        <div class="lang-pill">🚀 Projeto profissional</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<footer>
+  ✨ "O sucesso é a soma de pequenos esforços repetidos dia após dia." ✨ 🌸
+</footer>
+
+<script>
+// Week tabs functionality
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.week-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      const group = tab.closest('.section');
+      group.querySelectorAll('.week-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const target = tab.dataset.week;
+      group.querySelectorAll('.week-content').forEach(w => {
+        w.style.display = w.id === target ? 'block' : 'none';
+      });
+    });
+  });
+});
+</script>
+</body>
+</html>
